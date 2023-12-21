@@ -1,7 +1,7 @@
 import {Component} from 'react'
 import Loader from 'react-loader-spinner'
 import {BsSearch} from 'react-icons/bs'
-
+import {FcGenericSortingAsc, FcGenericSortingDesc} from 'react-icons/fc'
 import Header from '../Header'
 import Footer from '../Footer'
 import TotalStats from '../TotalStats'
@@ -334,7 +334,8 @@ class Home extends Component {
               data-testid="ascendingSort"
               onClick={this.whenAscendingSortButtonClicked}
             >
-              Top
+              -
+              <FcGenericSortingAsc className="order-icon" />
             </button>
             <button
               className="order"
@@ -342,7 +343,8 @@ class Home extends Component {
               data-testid="descendingSort"
               onClick={this.whenDescendingSortButtonClicked}
             >
-              Bottom
+              -
+              <FcGenericSortingDesc className="order-icon" />
             </button>
           </div>
           <div className="other-tables-bar">
